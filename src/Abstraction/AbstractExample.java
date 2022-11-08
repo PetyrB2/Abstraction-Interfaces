@@ -39,7 +39,17 @@ class Labrador extends Dog {
 public class AbstractExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Intro
+		System.out.println("=====================================");
+		System.out.println("Title: Abstraction");
+		System.out.println("Genre: Java Basics");
+		System.out.println("Author: Peter Broadbent");
+		System.out.println("Language: Java \n" + "Version: " + System.getProperty("java.version"));
+		System.out.println("Description: \n\tCreating an Abstract Class called Dog "
+				+ "\n\twe extend it to the other classes ");
+		System.out.println("\t\tChihuahua and Labrador "
+				+ "\n\tsaving having to repeat our code. (DRY)");
+		System.out.println("======================================\n");
 
 		Chihuahua c = new Chihuahua();
 		c.name();
