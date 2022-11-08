@@ -1,57 +1,11 @@
-package UsingInterface;
+package Refactored;
 
-interface DogInterface {
-	void name();
-
-	void species();
-
-	void bark();
-
-	void walk();
-}
-
-class Chihuahua implements DogInterface {
-	public void name() {
-		System.out.println("Chispa");
-	}
-
-	public void species() {
-		System.out.println("Is a Dog.");
-	}
-
-	public void bark() {
-		System.out.println("Goes WOOF!");
-	}
-
-	public void walk() {
-		System.out.println("Has been for a W.A.L.K");
-	}
-}
-
-class Labrador implements DogInterface {
-	public void name() {
-		System.out.println("Goldie");
-	}
-
-	public void species() {
-		System.out.println("Is a Dog.");
-	}
-
-	public void bark() {
-		System.out.println("Goes WOOF!");
-	}
-
-	public void walk() {
-		System.out.println("Has been for a W.A.L.K");
-	}
-}
-
-public class AbstractionUsingInterface {
+public class Refactored {
 
 	public static void main(String[] args) {
-		// Intro
+		// Introduction
 		System.out.println("==========================================================");
-		System.out.println("Title: Abstraction Using an Interface");
+		System.out.println("Title: Refactored - Abstraction Using an Interface");
 		System.out.println("Genre: Java Basics");
 		System.out.println("Author: Peter Broadbent");
 		System.out.println("Language: Java \n" + "Version: " + System.getProperty("java.version"));
@@ -59,8 +13,10 @@ public class AbstractionUsingInterface {
 		System.out.println("\tto the other classes Chihuahua and Labrador making sure");
 		System.out.println("\tthe methods are Implemented.");
 		System.out.println("\tThere is some repetition here.");
+		System.out.println("");
+		System.out.println("\tThis is the same project organised into separate");
+		System.out.println("\tClass files and a separate Interface file.");
 		System.out.println("===========================================================\n");
-		
 
 		// Create a Chihuahua
 		Chihuahua c = new Chihuahua();
@@ -68,14 +24,14 @@ public class AbstractionUsingInterface {
 		c.species();
 		c.bark();
 		c.walk();
-
 		System.out.println("");
-		// Create a Lab
+
+		// Create a Labrador
 		Labrador l = new Labrador();
 		l.name();
 		l.species();
 		l.bark();
 		l.walk();
+		System.out.println("");
 	}
-
 }
